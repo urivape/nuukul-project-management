@@ -19,9 +19,15 @@ export default class SideBar extends Component {
         return(
             <nav className="side-navbar box-scroll sidebar-scroll">
                 <ul className="list-unstyled">
+                    <li className="active">
+                        <a href="#dropdown-activities" aria-expanded="true" data-toggle="collapse"><i className="la la-puzzle-piece"></i><span>Actividades</span></a>
+                        <ul id="dropdown-activities" className="collapse list-unstyled show pt-0">
+                            <li><Link to="/Lista_Actividades" activeClassName="active">Mis Actividades</Link></li>
+                        </ul>
+                    </li>
                     <li>
-                        <a href="#dropdown-db" aria-expanded="true" data-toggle="collapse"><i className="la la-columns"></i><span>Dashboard</span></a>
-                        <ul id="dropdown-db" className="collapse list-unstyled pt-0 show">
+                        <a href="#dropdown-db" aria-expanded="false" data-toggle="collapse"><i className="la la-columns"></i><span>Dashboard</span></a>
+                        <ul id="dropdown-db" className="collapse list-unstyled pt-0">
                             <li><Link to="/" activeClassName="active">Default</Link></li>
                             <li><Link to="Dashboard_Clean" activeClassName="active">Clean</Link></li>
                             <li><Link to="Dashboard_Compact" activeClassName="active">Compact</Link></li>

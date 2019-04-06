@@ -107626,15 +107626,29 @@ function (_Component) {
         className: "side-navbar box-scroll sidebar-scroll"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#dropdown-db",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "active"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#dropdown-activities",
         "aria-expanded": "true",
+        "data-toggle": "collapse"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "la la-puzzle-piece"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Actividades")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        id: "dropdown-activities",
+        className: "collapse list-unstyled show pt-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/Lista_Actividades",
+        activeClassName: "active"
+      }, "Mis Actividades")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#dropdown-db",
+        "aria-expanded": "false",
         "data-toggle": "collapse"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "la la-columns"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Dashboard")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         id: "dropdown-db",
-        className: "collapse list-unstyled pt-0 show"
+        className: "collapse list-unstyled pt-0"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/",
         activeClassName: "active"
