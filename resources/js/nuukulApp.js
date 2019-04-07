@@ -14,7 +14,6 @@ import Dashboard_Clean from './Pages/Dashboard_Clean.jsx';
 import Dashboard_Compact from './Pages/Dashboard_Compact.jsx';
 import Widgets from './Pages/Widgets.jsx';
 import Basic_Tables from './Pages/Basic_Tables.jsx';
-import MisActividades from './Pages/Lista_Actividades.jsx';
 
 if (document.querySelector('#nuukulLogin') != null) {
     render(
@@ -39,7 +38,6 @@ if (document.querySelector('#nuukulApp') != null) {
                     <Route path="/dashboard_compact" component={Dashboard_Compact} />
                     <Route path="/widgets" component={Widgets}/>
                     <Route path="/tables_basic" component={Basic_Tables}/>
-                    <Route path="/lista_actividades" component={MisActividades}/>
                 </Router>
             </div>
         </>
